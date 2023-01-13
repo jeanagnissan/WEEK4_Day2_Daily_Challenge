@@ -1,0 +1,22 @@
+<div *ngIf="currentRoute == '/'; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+    <mat-toolbar color="primary" class="mat-elevation-z3">
+        <img
+            width="40"
+            alt="Angular Logo"
+            src="https://img.freepik.com/vecteurs-libre/illustration-concept-open-source_114360-2939.jpg?w=740&t=st=1673345326~exp=1673345926~hmac=8af04877969a916a200af2da53b5ee5514a8f273624307089318bee6354beb7b"/>
+        <span class="space"></span>
+        <a routerLink="/" color='accent' routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+    </mat-toolbar>
+</ng-template>
+<ng-template #elseBlock>
+    <mat-toolbar color="primary" class="mat-elevation-z3"> 
+        <img
+            width="40"
+            alt="Angular Logo"
+            src="https://img.freepik.com/vecteurs-libre/illustration-concept-open-source_114360-2939.jpg?w=740&t=st=1673345326~exp=1673345926~hmac=8af04877969a916a200af2da53b5ee5514a8f273624307089318bee6354beb7b"/>
+        <span class="space"></span>
+        <a routerLink="/" color='accent' routerLinkActive="active" ariaCurrentWhenActive="page">Deconnexion</a>
+    </mat-toolbar>
+</ng-template>
+ <br><br>
